@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
-<body class="inner-html">
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
             <a href="index.html" class="main-header-logo"><img src="svg/logo.svg" alt="Барбершоп BORODINSKI" width="111" height="24"></a>
@@ -82,22 +82,27 @@
     </footer>
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
-        <p></p>
-        <form action="#" class="login-form">
-            <label>
-                <input type="text" placeholder="Логин">
-            </label>    
-            <label>
-                <input type="password" placeholder="Пароль">
-            </label>
-            <label class="login-checkbox">
-                <input type="checkbox">
-                Запомните меня
-            </label>
-            <p class="restore-password">Я забыл пароль!</p>
+        <p>ВВедите пожалуйста свой логин и пароль</p>
+        <form action="#" class="login-form" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>                    
+                <input type="text" placeholder="Логин" name="login" class="login-icon-user" id="user-login">                
+            </p> 
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>                    
+                <input type="password" placeholder="Пароль" name="password" class="login-icon-password" id="user-password">                 
+            </p>
+            <p>
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>    
             <button type="submit" class="button">Войти</button>
         </form>
         <button class="modal-close visually-hidden" type="button"></button>
-    </section>    
+    </section>
 </body>
 </html>
