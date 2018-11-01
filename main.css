@@ -16,8 +16,7 @@ body {
   }
   
   .inner-page {
-    color: #000000;
-  
+    color: #000000;  
     background-color: #f9f6f3;
     background-image: url("img/shop-pattern.png");
     background-position: 0 0;
@@ -85,8 +84,7 @@ body {
   }
   
   .index-columns {
-    color: #000000;
-  
+    color: #000000;  
     background-color: #f8f5f2;
     background-image: url("img/shop-pattern.png");
     background-position: 0 0;
@@ -121,7 +119,118 @@ body {
   .appointment-item input:focus {
     border-color: #663d15;
   }
+
+  .page-title {
+      font-size: 30px;
+      line-height: 42px;
+  }
+
+  .breadcrumbs {
+      list-style: none;
+  }
+
+  .breadcrumbs a {
+      color: #000;
+  }
+
+  .breadcrumbs a:hover,
+  .breadcrumbs a:focus {
+      text-decoration: underline;
+  }
+
+  .breadcrumbs-current {
+      color: #aba9a7;
+  }
+
+  .filter fieldset {
+      border: none;
+  }
+
+  .filter legend {
+      font-size: 24px;
+      line-height: 30px;
+  }
+
+  .filter ul {
+      list-style: none;
+      line-height: 18px;
+  }
   
+  .filter-input:hover + label,
+  .filter-input:focus + label {
+      color: #663d15;
+  }
+
+  .filter-input:disabled + label {
+      color: #000;
+      opacity: 0.5;
+  }
+
+  .catalog-list {
+      list-style: none;
+  }
+
+  .catalog-item {
+      background-color: #f8f8f8;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog-item:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .catalog-item a {
+    color: #000;
+  }
+
+  .catalog-item h3 {
+      font-size: 14px;
+      line-height: 18px;
+  }
+
+  .catalog-item-price b {
+      background-color: #e5e5e5;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+  }
+
+  .catalog-item-price .button {
+      line-height: 20px;
+      color: #fff;
+  }
+
+  .catalog-category {
+      text-transform: none;
+  }
+
+  .pagination-list {
+      list-style: none;
+  }
+
+  .pagination-item a {
+      background-color: #000;
+      color: #fff;
+  }
+
+  .pagination-item a:hover,
+  .pagination-item a:focus,
+  .pagination-item a:active {
+      background-color: #663d15;
+  }
+
+  .pagination-item-current a {
+      background-color: #fff;
+      color: #000;
+  }
+
+  .pagination-item-current a:hover,
+  .pagination-item-current a:focus,
+  .pagination-item-current a:active {
+      background-color: #fff;
+      color: #000;
+  }
+
   .main-footer {
     color: #ffffff;
   
