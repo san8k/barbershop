@@ -1,3 +1,172 @@
 body {
-    background-color: #000;
+    margin: 0;
+    padding: 0;
+
+    background: #121212 url("img/layer.jpg") top center no-repeat;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    color: #fff;
 }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item b {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    background: #f8f5f2 url("img/shop-pattern.png") 0 0 repeat;
+    color: #000;
+}
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list time {
+    text-transform: none;
+}
+
+.gallery-content {
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+
+.button {
+    background-color: #000;
+    border: none;
+
+    font: inherit;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+.appointment-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+.appointment-item input:focus {
+    border-color: #663d15;
+}
+
+.main-footer {
+    background: #212121 url("img/footer-pattern.png") 0 0 repeat;
+}
+
+.footer-contacts a {
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright .button:focus,
+.footer-copyright .button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.modal {
+    color: #000;
+    background: #f8f3f0 url("img/shop-pattern.png") 0 0 repeat;
+}
+
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    background-color: #f9f6f3;
+    border: 2px solid #000;
+
+    font: inherit;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.login-checkbox:focus,
+.login-checkbox:hover {
+    color: #663d15;
+}
+
+.restore-password {
+    color: #000;
+    text-decoration: underline;
+}
+
+.restore-password:hover,
+.restore-password:focus {
+    text-decoration: none;
+}
+
