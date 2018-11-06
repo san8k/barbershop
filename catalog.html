@@ -15,7 +15,7 @@
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
+                    <li class="site-navigation-current"><a>Магазин</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
@@ -216,28 +216,38 @@
         </div>
     </footer>
     <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>ВВедите пожалуйста свой логин и пароль</p>
-        <form action="#" class="login-form" method="post">
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">ВВедите пожалуйста свой логин и пароль</p>
+            <form action="#" class="login-form" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-login">Логин</label>                    
+                    <input type="text" placeholder="Логин" name="login" class="login-icon-user" id="user-login">                
+                </p> 
+                <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>                    
+                    <input type="password" placeholder="Пароль" name="password" class="login-icon-password" id="user-password">                 
+                </p>
+                <p class="login-help">
+                    <label class="login-checkbox">
+                        <input type="checkbox" name="remember" class="visually-hidden">
+                        <span class="checkbox-indicator"></span>
+                        Запомните меня
+                    </label>
+                    <a href="#" class="restore">Я забыл пароль!</a>
+                </p>    
+                <button type="submit" class="button">Войти</button>
+            </form>
+            <button class="modal-close modal-close-login" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </section>
+        
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
             <p>
-                <label class="visually-hidden" for="user-login">Логин</label>                    
-                <input type="text" placeholder="Логин" name="login" class="login-icon-user" id="user-login">                
-            </p> 
-            <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>                    
-                <input type="password" placeholder="Пароль" name="password" class="login-icon-password" id="user-password">                 
-            </p>
-            <p>
-                <label class="login-checkbox">
-                    <input type="checkbox" name="remember" class="visually-hidden">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-                <a href="#" class="restore">Я забыл пароль!</a>
+                <img src="img/map.jpg" alt="Наш барбершоп по адресу..." width="780" height="560">
             </p>    
-            <button type="submit" class="button">Войти</button>
-        </form>
-        <button class="modal-close visually-hidden" type="button"></button>
-    </section>
+            <button class="modal-close modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </section>    
+        <div class="modal-overlay"></div>
+        <script src="main.js"></script>
 </body>
 </html>
